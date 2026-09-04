@@ -1,12 +1,16 @@
 :root {
-    --primary-color: #0284c7; /* Modern professional blue */
+    --primary-color: #0284c7;
     --primary-hover: #0369a1;
-    --text-main: #1e293b;     /* Dark slate for high readability */
-    --text-muted: #64748b;    /* Muted gray for secondary text */
-    --bg-color: #f8fafc;      /* Soft light background */
-    --card-bg: #ffffff;       /* Pure white for containers */
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
     --border-color: #e2e8f0;
     --radius: 12px;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -19,18 +23,25 @@ body {
     padding: 40px 20px;
 }
 
-/* Header & Navigation Bar Styling */
+/* Universal Header Styling */
 header {
     background: var(--card-bg);
     padding: 15px 25px;
     border-radius: var(--radius);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+    border: 1px solid var(--border-color);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 nav a {
@@ -38,7 +49,6 @@ nav a {
     color: var(--text-muted);
     font-weight: 500;
     font-size: 0.95em;
-    margin-left: 15px;
     transition: color 0.2s ease;
 }
 
@@ -46,8 +56,8 @@ nav a:hover, nav a.active {
     color: var(--primary-color);
 }
 
-/* Main Content Card Layout */
-main {
+/* Universal Content Card Styling */
+main, .container {
     background: var(--card-bg);
     padding: 40px;
     border-radius: var(--radius);
@@ -56,7 +66,7 @@ main {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.2em;
     color: #0f172a;
     margin-top: 0;
     margin-bottom: 10px;
@@ -64,12 +74,12 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: #0f172a;
     border-bottom: 2px solid var(--bg-color);
     padding-bottom: 8px;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 p {
@@ -88,16 +98,17 @@ p {
     margin-bottom: 20px;
 }
 
-/* Links inside content */
+/* General Link Styling */
 a {
     color: var(--primary-color);
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
 
-/* Lists styling */
+/* Lists Styling */
 ul {
     padding-left: 20px;
 }
@@ -109,7 +120,7 @@ li {
 /* Footer Styling */
 footer {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 0.85em;
     color: var(--text-muted);
 }
