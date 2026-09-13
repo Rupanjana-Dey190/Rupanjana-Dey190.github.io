@@ -1,38 +1,981 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="css/style.css">
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Rupanjana Dey</title>
-     <link rel="stylesheet" href="../css/style.css">
+
+    <title>Rupanjana Dey | Economics × Data</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
 </head>
+
+
 <body>
 
-    <header>
-    <div class="logo">
-        <a href="index.html" style="font-weight: bold; color: inherit; text-decoration: none;">Rupanjana Dey</a>
-    </div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about/index.html">About</a>
-        <a href="education.html">Education</a>
-        <a href="certifications.html">Certifications</a>
-        <a href="projects.html">Projects</a>
-        <a href="skills.html">Skills</a>
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <span>RD</span>
+
+        <div>
+            <strong>RUPANJANA DEY</strong>
+            <small>ECONOMICS × DATA</small>
+        </div>
+
+    </a>
+
+
+    <!-- Mobile Menu Button -->
+
+    <button class="menu-toggle" id="menuToggle">
+        ☰
+    </button>
+
+
+    <nav id="navMenu">
+
+        <a href="index.html">
+            Home
+        </a>
+
+
+        <!-- ABOUT DROPDOWN -->
+
+        <div class="dropdown">
+
+            <button class="dropbtn">
+                About <span>⌄</span>
+            </button>
+
+            <div class="dropdown-content">
+
+                <a href="about/index.html">
+                    About Me
+                </a>
+
+                <a href="education.html">
+                    Education
+                </a>
+
+                <a href="certifications.html">
+                    Certifications
+                </a>
+
+                <a href="skills.html">
+                    Skills
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- WORK DROPDOWN -->
+
+        <div class="dropdown">
+
+            <button class="dropbtn">
+                Work <span>⌄</span>
+            </button>
+
+            <div class="dropdown-content">
+
+                <a href="projects.html">
+                    All Projects
+                </a>
+
+                <a href="projects.html#analytics">
+                    Data Analytics
+                </a>
+
+                <a href="projects.html#ml">
+                    Machine Learning
+                </a>
+
+                <a href="projects.html#powerbi">
+                    Power BI
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <a href="#research">
+            Research
+        </a>
+
+
+        <a href="#contact">
+            Contact
+        </a>
+
     </nav>
+
 </header>
 
-    <main>
-        <h1>Rupanjana Dey</h1>
-        <p>Welcome to my professional portfolio.</p>
-        <p>Economics postgraduate student specialising in Data Analysis, with a strong foundation in economic modelling, econometrics, and data-driven decision-making.</p>
-        <p>Explore my navigation links above to view my about summary, education history, certifications, projects, and technical skills.</p>
-    </main>
 
-    <footer>
-        <p>&copy; 2026 Rupanjana Dey. Built with GitHub Pages.</p>
-    </footer>
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<main>
+
+
+<!-- =====================================================
+     HERO SECTION
+===================================================== -->
+
+<section class="hero">
+
+
+    <!-- LEFT SIDE -->
+
+    <div class="hero-content">
+
+        <p class="eyebrow">
+            ECONOMICS × DATA × RESEARCH
+        </p>
+
+
+        <h1>
+
+            Rupanjana
+            <br>
+
+            <span>Dey.</span>
+
+        </h1>
+
+
+        <p class="hero-description">
+
+            Economics postgraduate student exploring how
+            data, econometrics and machine learning can
+            explain real-world economic and social problems.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a href="#projects" class="btn primary">
+                Explore My Work ↗
+            </a>
+
+
+            <a href="#contact" class="btn secondary">
+                Let's Connect
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- RIGHT SIDE -->
+
+    <div class="hero-visual">
+
+        <div class="profile-card">
+
+
+            <div class="profile-top">
+
+                <span>
+                    01 / 04
+                </span>
+
+                <span>
+                    PORTFOLIO
+                </span>
+
+            </div>
+
+
+            <!-- YOUR PHOTO -->
+
+            <div class="profile-image">
+
+                <img
+                    src="Rupanjana_Dey.jpeg"
+                    alt="Rupanjana Dey"
+                >
+
+            </div>
+
+
+            <div class="profile-bottom">
+
+                <strong>
+                    RUPANJANA DEY
+                </strong>
+
+                <span>
+                    Economics · Analytics · Research
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     QUICK STATS
+===================================================== -->
+
+<section class="stats">
+
+
+    <div class="stat">
+
+        <strong
+            class="counter"
+            data-target="4">
+            0
+        </strong>
+
+        <span>
+            PROJECT AREAS
+        </span>
+
+    </div>
+
+
+    <div class="stat">
+
+        <strong
+            class="counter"
+            data-target="6">
+            0
+        </strong>
+
+        <span>
+            ANALYTICS TOOLS
+        </span>
+
+    </div>
+
+
+    <div class="stat">
+
+        <strong
+            class="counter"
+            data-target="3">
+            0
+        </strong>
+
+        <span>
+            RESEARCH AREAS
+        </span>
+
+    </div>
+
+
+    <div class="stat">
+
+        <strong>
+            01
+        </strong>
+
+        <span>
+            CURIOUS MIND
+        </span>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT SECTION
+===================================================== -->
+
+<section class="section about-section" id="about">
+
+
+    <div class="section-label">
+
+        <span>
+            01
+        </span>
+
+        <span>
+            ABOUT ME
+        </span>
+
+    </div>
+
+
+    <div class="about-grid">
+
+
+        <div>
+
+            <h2>
+
+                I study economics.
+                <br>
+
+                <span>
+                    I explore data.
+                </span>
+
+            </h2>
+
+        </div>
+
+
+        <div class="about-text">
+
+            <p>
+
+                I am an economics postgraduate student
+                with a strong interest in data analysis,
+                econometrics and machine learning.
+
+            </p>
+
+
+            <p>
+
+                My work focuses on using data-driven
+                methods to understand economic and
+                social problems and communicate
+                meaningful insights.
+
+            </p>
+
+
+            <a
+                href="about/index.html"
+                class="text-link">
+
+                More about me ↗
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROJECTS SECTION
+===================================================== -->
+
+<section
+    class="section projects-section"
+    id="projects">
+
+
+    <div class="section-heading">
+
+
+        <div class="section-label">
+
+            <span>
+                02
+            </span>
+
+            <span>
+                SELECTED WORK
+            </span>
+
+        </div>
+
+
+        <h2>
+
+            Things I have
+            <br>
+
+            <span>
+                been working on.
+            </span>
+
+        </h2>
+
+    </div>
+
+
+
+    <div class="projects-grid">
+
+
+        <!-- PROJECT 1 -->
+
+        <a
+            href="projects.html"
+            class="project-card project-large">
+
+            <div class="project-number">
+                01
+            </div>
+
+            <div class="project-icon">
+                🦟
+            </div>
+
+            <h3>
+
+                Predicting Disease
+                <br>
+                Outbreaks
+
+            </h3>
+
+            <p>
+
+                Big Data Analytics ·
+                Machine Learning
+
+            </p>
+
+            <span class="project-arrow">
+                ↗
+            </span>
+
+        </a>
+
+
+
+        <!-- PROJECT 2 -->
+
+        <a
+            href="projects.html"
+            class="project-card">
+
+            <div class="project-number">
+                02
+            </div>
+
+            <div class="project-icon">
+                📊
+            </div>
+
+            <h3>
+
+                Youth Unemployment
+                <br>
+                Analysis
+
+            </h3>
+
+            <p>
+
+                Economics · PLFS · Python
+
+            </p>
+
+            <span class="project-arrow">
+                ↗
+            </span>
+
+        </a>
+
+
+
+        <!-- PROJECT 3 -->
+
+        <a
+            href="projects.html"
+            class="project-card">
+
+            <div class="project-number">
+                03
+            </div>
+
+            <div class="project-icon">
+                📈
+            </div>
+
+            <h3>
+
+                Power BI
+                <br>
+                Sales Dashboard
+
+            </h3>
+
+            <p>
+
+                Data Visualisation ·
+                Business Analytics
+
+            </p>
+
+            <span class="project-arrow">
+                ↗
+            </span>
+
+        </a>
+
+
+
+        <!-- PROJECT 4 -->
+
+        <a
+            href="projects.html"
+            class="project-card">
+
+            <div class="project-number">
+                04
+            </div>
+
+            <div class="project-icon">
+                🛒
+            </div>
+
+            <h3>
+
+                Amazon vs Flipkart
+                <br>
+                Sentiment Analysis
+
+            </h3>
+
+            <p>
+
+                NLP · Naive Bayes · SVM
+
+            </p>
+
+            <span class="project-arrow">
+                ↗
+            </span>
+
+        </a>
+
+
+    </div>
+
+
+
+    <div class="view-all">
+
+        <a
+            href="projects.html"
+            class="btn secondary">
+
+            View All Projects ↗
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     RESEARCH SECTION
+===================================================== -->
+
+<section
+    class="section research-section"
+    id="research">
+
+
+    <div class="section-label">
+
+        <span>
+            03
+        </span>
+
+        <span>
+            RESEARCH INTERESTS
+        </span>
+
+    </div>
+
+
+    <div class="research-grid">
+
+
+        <div>
+
+            <h2>
+
+                Questions worth
+                <br>
+
+                <span>
+                    exploring.
+                </span>
+
+            </h2>
+
+        </div>
+
+
+
+        <div class="research-list">
+
+
+            <!-- RESEARCH 1 -->
+
+            <details open>
+
+                <summary>
+
+                    Informal Competition &
+                    Capability Upgrading
+
+                    <span>
+                        +
+                    </span>
+
+                </summary>
+
+
+                <p>
+
+                    Exploring how competition from the
+                    informal sector affects firm capability
+                    upgrading in developing economies
+                    using machine learning.
+
+                </p>
+
+            </details>
+
+
+
+            <!-- RESEARCH 2 -->
+
+            <details>
+
+                <summary>
+
+                    Economics & Data Analytics
+
+                    <span>
+                        +
+                    </span>
+
+                </summary>
+
+
+                <p>
+
+                    Using Python, econometrics and
+                    visualisation to understand economic
+                    relationships and patterns.
+
+                </p>
+
+            </details>
+
+
+
+            <!-- RESEARCH 3 -->
+
+            <details>
+
+                <summary>
+
+                    Big Data & Public Policy
+
+                    <span>
+                        +
+                    </span>
+
+                </summary>
+
+
+                <p>
+
+                    Applying data-driven methods to
+                    real-world social and economic
+                    problems.
+
+                </p>
+
+            </details>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     EDUCATION + SKILLS
+===================================================== -->
+
+<section class="section information-section">
+
+
+    <!-- EDUCATION -->
+
+    <div class="info-card">
+
+
+        <div class="section-label">
+
+            <span>
+                04
+            </span>
+
+            <span>
+                EDUCATION
+            </span>
+
+        </div>
+
+
+        <h2>
+
+            Learning
+            <br>
+
+            <span>
+                continuously.
+            </span>
+
+        </h2>
+
+
+        <a
+            href="education.html"
+            class="text-link">
+
+            View education ↗
+
+        </a>
+
+    </div>
+
+
+
+    <!-- SKILLS -->
+
+    <div class="info-card">
+
+
+        <div class="section-label">
+
+            <span>
+                05
+            </span>
+
+            <span>
+                SKILLS
+            </span>
+
+        </div>
+
+
+        <h2>
+
+            Tools for
+            <br>
+
+            <span>
+                curiosity.
+            </span>
+
+        </h2>
+
+
+        <div class="skill-tags">
+
+            <span>
+                Python
+            </span>
+
+            <span>
+                R
+            </span>
+
+            <span>
+                SQL
+            </span>
+
+            <span>
+                Stata
+            </span>
+
+            <span>
+                Power BI
+            </span>
+
+            <span>
+                Excel
+            </span>
+
+        </div>
+
+
+        <a
+            href="skills.html"
+            class="text-link">
+
+            View all skills ↗
+
+        </a>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section
+    class="section contact-section"
+    id="contact">
+
+
+    <div class="section-label">
+
+        <span>
+            06
+        </span>
+
+        <span>
+            CONTACT
+        </span>
+
+    </div>
+
+
+    <h2>
+
+        Let's create
+        <br>
+
+        <span>
+            something meaningful.
+        </span>
+
+    </h2>
+
+
+    <p>
+
+        Interested in economics, data analytics
+        or research? Let's connect.
+
+    </p>
+
+
+    <div class="contact-links">
+
+
+        <!-- CHANGE EMAIL HERE -->
+
+        <a href="mailto:YOUR_EMAIL@gmail.com">
+
+            Email ↗
+
+        </a>
+
+
+        <!-- YOUR GITHUB -->
+
+        <a
+            href="https://github.com/Rupanjana-Dey190"
+            target="_blank">
+
+            GitHub ↗
+
+        </a>
+
+
+        <!-- CHANGE LINKEDIN HERE -->
+
+        <a
+            href="https://www.linkedin.com"
+            target="_blank">
+
+            LinkedIn ↗
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div>
+
+        <strong>
+            RUPANJANA DEY
+        </strong>
+
+        <span>
+            Economics × Data × Research
+        </span>
+
+    </div>
+
+
+    <p>
+
+        © 2026 Rupanjana Dey
+
+    </p>
+
+</footer>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="js/script.js"></script>
+
 
 </body>
+
 </html>
+```
