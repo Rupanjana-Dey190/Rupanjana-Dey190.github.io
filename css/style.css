@@ -483,3 +483,64 @@ footer {
     }
 
 }
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-page {
+    background: #f7f9fc;
+    padding: 80px 0;
+    min-height: 70vh;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-header p {
+    color: #b28b45;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.contact-header h1 {
+    color: #17365d;
+    font-size: 38px;
+    margin-top: 8px;
+}
+
+.contact-card {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    border: 1px solid #e1e5ea;
+    border-radius: 6px;
+    padding: 35px;
+}
+
+.contact-item {
+    padding: 18px 0;
+    border-bottom: 1px solid #e6e9ed;
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.contact-item h3 {
+    color: #17365d;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.contact-item p,
+.contact-item a {
+    color: #66717e;
+    font-size: 14px;
+}
+
+.contact-item a:hover {
+    color: #b28b45;
+}
