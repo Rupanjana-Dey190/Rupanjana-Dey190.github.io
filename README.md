@@ -112,11 +112,11 @@ Details are available on the **Certifications** section of my portfolio.
 ## 💻 Tools & Technologies
 
 ```text
-Python        ████████████████████
-Power BI      █████████████████
-Excel         ███████████████████
-SQL           ████████████████
-GitHub        █████████████████
+Python       
+Power BI     
+Excel         
+SQL          
+GitHub       
 ```
 
 ---
